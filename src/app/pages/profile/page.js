@@ -111,7 +111,7 @@ export default function AdminProfile() {
       ...options.headers,
     };
 
-    const response = await fetch(`http://localhost:4000${endpoint}`, {
+    const response = await fetch(`https://keeva.in${endpoint}`, {
       ...options,
       headers,
     });
