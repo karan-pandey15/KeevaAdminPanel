@@ -54,7 +54,7 @@ export default function ServicesTable() {
       setLoading(true);
       setError(null);
       
-      const response = await fetch(`https://keeva.in/services`);
+      const response = await fetch(`https://api.keeva.in/services`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -89,7 +89,7 @@ export default function ServicesTable() {
     try {
       setDeleteLoading(id);
       
-      const response = await fetch(`https://keeva.in/services`, {
+      const response = await fetch(`https://api.keeva.in/services`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -161,7 +161,7 @@ export default function ServicesTable() {
               </div>
               <div>
                 <h1 className="text-3xl font-bold text-gray-800">Services Management</h1>
-                <p className="text-gray-500 text-sm">Manage all your services from https://keeva.in</p>
+                <p className="text-gray-500 text-sm">Manage all your services from https://api.keeva.in</p>
               </div>
             </div>
             
@@ -216,7 +216,7 @@ export default function ServicesTable() {
               <div>
                 <p className="text-red-800 font-semibold">Error Loading Services</p>
                 <p className="text-red-600 text-sm mt-1">{error}</p>
-                <p className="text-red-600 text-sm mt-1">Make sure your server is running on https://keeva.in</p>
+                <p className="text-red-600 text-sm mt-1">Make sure your server is running on https://api.keeva.in</p>
               </div>
             </div>
           )}

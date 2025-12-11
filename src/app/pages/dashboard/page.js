@@ -50,7 +50,7 @@ export default function AdminDashboard() {
 
       const responses = await Promise.all(
         endpoints.map((e) =>
-          fetch(`https://keeva.in${e.url}`, { headers }).then((res) =>
+          fetch(`https://api.keeva.in${e.url}`, { headers }).then((res) =>
             res.json()
           )
         )

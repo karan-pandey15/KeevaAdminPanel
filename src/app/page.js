@@ -23,7 +23,7 @@ export default function SignIn() {
     setError("");
 
     try {
-      const res = await fetch("https://keeva.in/partner/signin/phone", {
+      const res = await fetch("https://api.keeva.in/partner/signin/phone", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone_number: phone })

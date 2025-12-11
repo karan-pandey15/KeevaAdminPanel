@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://keeva.in',
+  baseURL: 'https://api.keeva.in',
   timeout: 10000,
 });
 

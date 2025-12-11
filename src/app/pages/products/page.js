@@ -45,7 +45,7 @@ export default function CreateProduct() {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('https://keeva.in/products');
+      const response = await fetch('https://api.keeva.in/products');
       if (response.ok) {
         const data = await response.json();
         if (data.ok && data.products) {
@@ -233,7 +233,7 @@ export default function CreateProduct() {
       console.log('Form Data:', formDataObj);
       console.log('Images count:', images.length);
 
-      const response = await fetch('https://keeva.in/products', {
+      const response = await fetch('https://api.keeva.in/products', {
         method: 'POST',
         body: formDataToSend,
         // Note: Don't set Content-Type header when sending FormData
