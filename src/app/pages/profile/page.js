@@ -31,7 +31,7 @@ const DeleteModal = ({ isOpen, onClose, onConfirm, profileName }) => {
         </div>
         <h2 className="text-2xl font-bold text-gray-900 text-center mb-2">Delete Profile?</h2>
         <p className="text-gray-600 text-center mb-6">
-          Are you sure you want to delete <span className="font-semibold text-gray-900">{profileName}</span>'s profile? This action cannot be undone and all data will be permanently removed.
+          Are you sure you want to delete <span className="font-semibold text-gray-900">{profileName}</span> is profile? This action cannot be undone and all data will be permanently removed.
         </p>
         <div className="flex gap-3">
           <button
