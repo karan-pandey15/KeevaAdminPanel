@@ -370,12 +370,15 @@ export default function CreateProduct() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
                     <option value="">Select category</option>
-                    <option value="Dry Fruits">Dry Fruits</option>
-                    <option value="Spices">Spices</option>
-                    <option value="Grains">Grains</option>
-                    <option value="Beverages">Beverages</option>
-                    <option value="Snacks">Snacks</option>
-                    <option value="Dairy">Dairy</option>
+                    <option value="All">Dry Fruits</option>
+                    <option value="Fruits">Fruits</option>
+                    <option value="Vegetables">Vegetables</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="MilkBread">Milk & Bread </option>
+                    <option value="Snacks & drinks">Snacks & drinks </option>
+                    <option value="Beauty & wellness">Beauty & wellness</option>
+ 
+
                     {categories.map((cat, index) => (
                       <option key={index} value={cat}>{cat}</option>
                     ))}
